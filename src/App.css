@@ -1,0 +1,8 @@
+nav {
+  display: flex;
+}
+
+ul, li {
+  display: flex;
+  padding: 10px;
+}
