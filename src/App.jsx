@@ -23,7 +23,7 @@ function App() {
           // Onde vai ficar o conteúdo principal da página
         }
         <h1>Main Content</h1>
-        <Lista/>
+        <Lista />
         <Bin2Dec/>
       </main>
     </>
