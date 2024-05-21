@@ -1,22 +1,22 @@
 import itens from "../../itens";
+import "./lista.css"
 
 function Lista({nome, idade, funcao, id}) {
-    // const lista = [
-    //     1,
-    //     2,
-    //     3
-    // ] // Se coloca na Key da tag a variável de onde você quer pegar a informação, nesse caso a lista de array
-    // console.log(Math.floor(Math.random()) * 10);
-    // console.log(chave);
-    // console.log(id);
     return (
-        <ol>
+        <ol className="lista-nomes">
             {itens.map((projeto) =>
                 <li key={projeto.id}>
-                    <div>
+                    <div className="cards">
                         <h1>{projeto.nome}</h1>
-                        <p>{projeto.idade}</p>
-                        <span>{projeto.funcao}</span>
+                        <span>{projeto.idade}</span>
+                        <div className="experiencias">
+                            <h2>Empresas:</h2>
+                            <ul>
+                                {projeto.experiencias.map((empresa, id) =>
+                                    <li key={id} className="empresa">{empresa.nome_empresa}</li>
+                                )}
+                            </ul>
+                        </div>
                     </div>
                 </li>
             )}

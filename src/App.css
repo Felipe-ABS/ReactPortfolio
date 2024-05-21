@@ -1,8 +1,19 @@
 nav {
   display: flex;
+  padding: 10px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+span {
+  font-size: 1.4rem;
 }
 
 ul, li {
   display: flex;
-  padding: 10px;
+  justify-content: space-around;
+  margin: 20px 0px;
+  /* padding: 10px; */
 }
