@@ -13,7 +13,7 @@ function Lista({nome, idade, funcao, id}) {
                             <h2>Empresas:</h2>
                             <ul>
                                 {projeto.experiencias.map((empresa, id) =>
-                                    <li key={id} className="empresa">{empresa.nome_empresa}</li>
+                                    <li key={id} className="empresa">{empresa.nome_empresa} ({empresa.funcao} de {empresa.anoAdmissao} até {empresa.anoDemissao})</li>
                                 )}
                             </ul>
                         </div>

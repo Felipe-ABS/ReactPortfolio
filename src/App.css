@@ -1,15 +1,12 @@
-nav {
+nav, footer {
   background-color: teal;
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: space-around;
+  justify-self: left;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-}
-
-nav h1 {
-  position: relative;
-  right: 10%;
 }
 
 span {
@@ -21,4 +18,11 @@ span {
   width: 30%;
   justify-content: space-between;
   padding: 0px;
+}
+
+.nav-buttons li {
+  background-color: cadetblue;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
 }

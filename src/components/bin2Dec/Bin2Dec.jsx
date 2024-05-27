@@ -43,8 +43,9 @@ export default function Bin2Dec() {
         // 8 + 0 + 2 + 0 = 10
 
         <div>
-            <form onSubmit={calcularBinario}>
-                Insira uma sequência binária: <input type="text"
+            <form name="binario" onSubmit={calcularBinario}>
+                <label>Insira uma sequência binária: </label>
+                <input type="text"
                     name="binNumInput"
                     value={binNum}
                     onChange={(e) => {
