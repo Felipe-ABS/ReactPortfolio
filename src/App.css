@@ -9,14 +9,25 @@ nav, footer {
   color: white;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  background-color: #7fffd4;
+}
+
 span {
   font-size: 1.4rem;
 }
 
 .nav-buttons {
   display: flex;
-  width: 30%;
-  justify-content: space-between;
+  width: 50%;
+  justify-content: space-around;
   padding: 0px;
 }
 
@@ -25,4 +36,9 @@ span {
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
+}
+
+.nav-buttons li:hover {
+  background-color: rgb(70, 170, 170);
+  
 }

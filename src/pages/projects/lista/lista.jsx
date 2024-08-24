@@ -1,4 +1,4 @@
-import itens from "../../itens";
+import itens from "../../../itens";
 import "./lista.css"
 
 function Lista({nome, idade, funcao, id}) {
