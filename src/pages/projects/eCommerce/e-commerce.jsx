@@ -1,17 +1,18 @@
-import "../lista/lista.css"
+import "./e-commerce.css"
 
 export default function ECommerce() {
     return (
         <>
-            <ol className="lista-nomes">
-                <li>
-                    <div className="cards">
-                        <p>Título e opções</p>
-                    </div>
-                </li>
-            </ol>
+            <div className="title-bar">
+                <p>Título e opções</p>
+            </div>
             <div>
                 <span>Barra Lateral</span>
+            </div>
+            <div className="card-destaque">
+                <h3>Produto Destaque</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</p>
+                <p>Sed nec molestie eros. Sed viver ra velit venenatis fermentum luctus.</p>
             </div>
             <div>
                 <span>Produtos</span>
