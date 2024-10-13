@@ -1,11 +1,21 @@
-import './e-commerce.css';
+import "../lista/lista.css"
 
-function ECommerce() {
+export default function ECommerce() {
     return (
         <>
-            <div></div>
+            <ol className="lista-nomes">
+                <li>
+                    <div className="cards">
+                        <p>Título e opções</p>
+                    </div>
+                </li>
+            </ol>
+            <div>
+                <span>Barra Lateral</span>
+            </div>
+            <div>
+                <span>Produtos</span>
+            </div>
         </>
     )
 }
-
-export default ECommerce;

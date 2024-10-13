@@ -7,8 +7,7 @@ import {
 import Lista from './pages/projects/lista/lista.jsx'
 import ErrorPage from './pages/error-page/error-page.jsx'
 import Contato from './pages/contato/contato.jsx'
-import Testes from './pages/testes/testes.jsx'
-import Contact from './pages/routerContactTest/contact.jsx'
+import ProjectPage from './pages/projects-page/project-page'
 
 function App() {
   return (
@@ -21,8 +20,8 @@ function App() {
         <nav>
           <Link to={'/'}><h1>Felipe ABS</h1></Link>
           <ul className='nav-buttons'>
-            <Link to={'/'}><li>Projetos</li></Link>
-            <Link to={'testes'}><li>Testes</li></Link>
+            <Link to={'/projects'}><li>Projetos</li></Link>
+            <Link to={'/'}><li>Testes</li></Link>
             <Link to={'/'}><li>Sobre</li></Link>
             <Link to={'contato'}><li>Contato</li></Link>
           </ul>
@@ -31,8 +30,7 @@ function App() {
           <Routes>
             <Route path='/' errorElement={<ErrorPage/>} element={<Lista/>} />
             <Route path='contato' errorElement={<ErrorPage/>} element={<Contato />} />
-            <Route path='testes' errorElement={<ErrorPage/>} element={<Testes/>}/>
-            <Route path='/contacts/:contactId' errorElement={<ErrorPage/>} element={<Contact/>}/>
+            <Route path='/projects/*' errorElement={<ErrorPage/>} element={<ProjectPage/>}/>
           </Routes>
         </main>
         <footer>
