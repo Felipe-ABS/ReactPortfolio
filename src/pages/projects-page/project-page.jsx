@@ -6,6 +6,7 @@ import {
 import ECommerce from '../projects/eCommerce/e-commerce'
 import ErrorPage from '../error-page/error-page'
 import './project-page.css'
+import ProjectButton from '../../components/project-button/ProjectButton'
 
 export default function ProjectPage() {
     return (
@@ -20,12 +21,23 @@ export default function ProjectPage() {
                 <div className='project-link'>
                     <Link className='link' to='ecommerce'><span>E-Commerce</span></Link>
                 </div>
-                <div className='project-display'>
-                    <h1>COMEÇO</h1>
-                    <Routes>
-                        <Route path='/ecommerce' errorElement={<ErrorPage/>} element={<ECommerce/>}/>
-                    </Routes>
-                    <h1>FIM</h1>
+                <div className="display-box">
+                    <div className='project-preview'>
+                        <h1>COMEÇO</h1>
+                        <Routes>
+                            <Route path='/ecommerce' errorElement={<ErrorPage/>} element={<ECommerce/>}/>
+                        </Routes>
+                        <h1>FIM</h1>
+                    </div>
+                    <div className="projects">
+                        <ol className="project-list">
+                            <li className="project-item"><ProjectButton/>1</li>
+                            <li className="project-item"><ProjectButton/>2</li>
+                            <li className="project-item"><ProjectButton/>3</li>
+                            <li className="project-item"><ProjectButton/>4</li>
+                            <li className="project-item"><ProjectButton/>5</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             
